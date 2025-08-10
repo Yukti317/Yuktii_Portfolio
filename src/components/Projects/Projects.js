@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
+import leaf from "../../Assets/logo.png";
+import mbl from "../../Assets/web-logo-inRed.png";
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import editor from "../../Assets/munim.png";
+import chatify from "../../Assets/zipcode1.webp";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import bitsOfCode from "../../Assets/wholesale.webp";
 
 function Projects() {
   return (
@@ -15,20 +16,19 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Rate By Zipcode"
+              description="A Shopify app built with React.js, HTML, CSS, and Shopify Polaris that calculates shipping charges based on distance or product weight, ensuring accurate and dynamic delivery cost estimation."
+              demoLink="https://apps.shopify.com/rates-by-zipcode-iweb?ot=3b3ccb08-30f8-4c7d-8920-b3c364f6590e&search_id=4cf4d3a1-a545-4e88-a9be-cd95eebab060&surface_detail=rate+by+zipcode&surface_inter_position=1&surface_intra_position=4&surface_type=search_ad"
             />
           </Col>
 
@@ -36,10 +36,9 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Wholesale Hero & B2B Pricing"
+              description="A Shopify app built with React.js, HTML, CSS, and Shopify Polaris that enables store owners to set individual customer pricing and offer bulk discounts for enhanced sales and customer satisfaction."
+              demoLink="https://apps.shopify.com/personalized-every-customer?search_id=b3d27f41-9eea-4f8c-b4b1-0a2f8f6057e4&surface_detail=wholesale&surface_inter_position=1&surface_intra_position=25&surface_type=search"
             />
           </Col>
 
@@ -47,44 +46,31 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Munnim Erp system"
+              description="A comprehensive accounting and GST software suite built with React.js, HTML, CSS, Material UI React, and Reactstrap, offering efficient financial management, tax compliance, and streamlined business operations."
+              demoLink="https://themunim.com/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
+            style={true}
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="My BankLoan (Web Application)"
+              description="MyBankLoan, built with React.js, Next.js, HTML, CSS, and Reactstrap, streamlines loan management by simplifying tracking, updates, and visualizing loan statuses for improved financial oversight and decision-making efficiency."
+              demoLink="https://www.mybankloan.ai/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              style={true}
+              imgPath={leaf}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="My BankLoan (Mobile Application)"
+              description="MyBankLoan, built with Flutter, streamlines loan management by enabling easy tracking, updates, and status visualization, while also being actively maintained for bug fixes and redesigned for improved user experience."
+              demoLink="https://www.mybankloan.ai/" 
             />
           </Col>
         </Row>
